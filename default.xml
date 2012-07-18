@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="aosp"
-           fetch=".."
-           review="https://android-review.googlesource.com/" />
+  <remote  name="aosp"    
+           fetch="https://android-review.googlesource.com/" />
   <remote  name="bamf"	    
            fetch="ssh://git@bitbucket.org/TeamBAMF/" />	
+  <remote  name="gapps"	    
+           fetch="ssh://git@bitbucket.org/adrynalyne/" />	
   <default revision="refs/tags/android-4.1.1_r1"
            remote="aosp"
            sync-j="4" />
 
+  <!--<project path="bamf_gapps" name="gapps" revision="jb" remote="gapps" />-->
   <project path="build" name="build" revision="master" remote="bamf" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
