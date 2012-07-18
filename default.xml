@@ -11,7 +11,9 @@
            remote="aosp"
            sync-j="4" />
 
-  <!--<project path="bamf_gapps" name="gapps" revision="jb" remote="gapps" />-->
+  <!--<project path="bamf_gapps" name="gapps" revision="jb" remote="gapps" >
+    <copyfile src="buildgapps" dest="buildgapps" />
+  </project>-->
   <project path="build" name="build" revision="master" remote="bamf" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
