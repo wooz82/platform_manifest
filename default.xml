@@ -255,6 +255,7 @@
   <project path="packages/apps/Superuser" name="packages_apps_superuser" revision="master" remote="bamf" />
   <project path="packages/apps/VoiceDialer" name="packages_apps_voicedialer" revision="master" remote="bamf" />
   <project path="packages/bamf" name="packages_bamf" revision="master" remote="bamf" />  
+  <project path="packages/tmobile" name="packages_tmobile" revision="master" remote="bamf" />  
   <project path="packages/experimental" name="packages_experimental" revision="master" remote="bamf" />
   <project path="packages/inputmethods" name="packages_inputmethods" revision="master" remote="bamf" />  
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" />
