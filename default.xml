@@ -33,8 +33,8 @@
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" />
   <project path="device/moto" name="device_moto" revision="master" remote="bamf" />  
-  <project path="device/sample" name="device/sample" />
-  <project path="device/samsung" name="device_samsung" revision="master" remote="bamf" />  
+  <project path="device/samsung" name="device_samsung" revision="master" remote="bamf" />
+  <project path="device/sample" name="device_sample" revision="master" remote="bamf" />    
   <project path="device/ti/panda" name="device/ti/panda" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
   <project path="external/aac" name="platform/external/aac" />
