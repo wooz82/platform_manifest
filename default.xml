@@ -14,7 +14,7 @@
   <project path="bamf_gapps" name="gapps" revision="jb" remote="bamf" >
     <copyfile src="buildgapps" dest="buildgapps" />
   </project>
-  <project path="build" name="build" revision="master" remote="bamf" >
+  <project path="build" name="build" revision="jb_42" remote="bamf" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" />
@@ -273,7 +273,7 @@
   <project path="packages/apps/Phone" name="packages_apps_phone" revision="jb_42" remote="bamf" />
   <project path="packages/apps/Settings" name="packages_apps_settings" revision="jb_42" remote="bamf" />
   <project path="packages/apps/SpareParts" name="packages_apps_spareparts" revision="jb_42" remote="bamf" />
-  <project path="packages/apps/Superuser" name="packages_apps_superuser" revision="jb_42" remote="bamf" />
+  <project path="packages/apps/Superuser" name="packages_apps_superuser" revision="master" remote="bamf" />
   <project path="packages/apps/VoiceDialer" name="packages_apps_voicedialer" revision="jb_42" remote="bamf" />
   <project path="packages/bamf" name="packages_bamf" revision="master" remote="bamf" />  
   <project path="packages/tmobile" name="packages_tmobile" revision="master" remote="bamf" />  
