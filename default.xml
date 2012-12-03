@@ -23,7 +23,7 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" />
-  <project path="bionic" name="platform/bionic" />
+  <project path="bionic" name="android_bionic" remote="cm" revision="mr1-staging" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="platform/bootable/recovery" />
@@ -47,6 +47,7 @@
   <project path="device/ti/panda" name="device/ti/panda" groups="device" />
   <project path="device/samsung/d2-common" name="android_device_samsung_d2-common" remote="joel" revision="jb_42" />
   <project path="device/samsung/d2vzw" name="android_device_samsung_d2vzw" remote="joel" revision="jb_42" />
+  <project path="kernel/samsung/d2" name="android_kernel_samsung_d2" remote="joel" revision="mr1-staging" />
   <project path="vendor/samsung/d2vzw" name="android_vendor_samsung_d2vzw" remote="joel" revision="jb_42" />
   <project path="device/samsung/msm8960-common" name="android_device_samsung_msm8960-common" remote="joel" revision="jb_42" />
   <project path="device/samsung/qcom-common" name="android_device_samsung_qcom-common" remote="joel" revision="jb_42" />
@@ -69,7 +70,7 @@
   <project path="external/bsdiff" name="platform/external/bsdiff" />
   <project path="external/bzip2" name="platform/external/bzip2" />
   <project path="external/checkpolicy" name="platform/external/checkpolicy" />
-  <project path="external/chromium" name="platform/external/chromium" />
+  <project path="external/chromium" name="android_external_chromium" remote="cm" revision="mr1-staging" />
   <project path="external/chromium-trace" name="platform/external/chromium-trace" />
   <project path="external/cibu-fonts" name="platform/external/cibu-fonts" />
   <project path="external/clang" name="platform/external/clang" />
@@ -179,7 +180,7 @@
   <project path="external/replicaisland" name="platform/external/replicaisland" />
   <project path="external/safe-iop" name="platform/external/safe-iop" />
   <project path="external/sepolicy" name="platform/external/sepolicy" />
-  <project path="external/skia" name="platform/external/skia" />
+  <project path="external/skia" name="android_external_skia" remote="cm" revision="mr1-staging" />
   <project path="external/smali" name="platform/external/smali" />
   <project path="external/sonivox" name="platform/external/sonivox" />
   <project path="external/speex" name="platform/external/speex" />
@@ -198,7 +199,7 @@
   <project path="external/tremolo" name="platform/external/tremolo" />
   <project path="external/v8" name="platform/external/v8" />
   <project path="external/valgrind" name="platform/external/valgrind" />
-  <project path="external/webkit" name="platform/external/webkit" />
+  <project path="external/webkit" name="android_external_webkit" remote="cm" revision="mr1-staging" />
   <project path="external/webp" name="platform/external/webp" />
   <project path="external/webrtc" name="platform/external/webrtc" />
   <project path="external/wpa_supplicant_6" name="platform/external/wpa_supplicant_6" />
@@ -208,9 +209,9 @@
   <project path="external/yaffs2" name="platform/external/yaffs2" />
   <project path="external/zlib" name="platform/external/zlib" />
   <project path="external/zxing" name="platform/external/zxing" />
-  <project path="frameworks/av" name="platform/frameworks/av" />
-  <project path="frameworks/base" name="frameworks_base" revision="jb_42" remote="bamf" />
-  <project path="frameworks/base/packages" name="frameworks_base_packages" revision="jb_42" remote="bamf" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="cm" revision="mr1-staging" />
+  <project path="frameworks/base" name="frameworks_base" revision="d2-jb_42" remote="bamf" />
+  <project path="frameworks/base/packages" name="frameworks_base_packages" revision="d2-jb_42" remote="bamf" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" />
   <project path="frameworks/compile/linkloader" name="platform/frameworks/compile/linkloader" />
   <project path="frameworks/compile/llvm-ndk-cc" name="platform/frameworks/compile/llvm-ndk-cc" />
@@ -219,7 +220,7 @@
   <project path="frameworks/ex" name="frameworks_ex" revision="jb_42" remote="bamf" />
   <project path="frameworks/mff" name="platform/frameworks/mff" />
   <project path="frameworks/ml" name="platform/frameworks/ml" />
-  <project path="frameworks/native" name="frameworks_native" revision="master" remote="bamf" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="cm" revision="mr1-staging" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" />
   <project path="frameworks/opt/carddav" name="platform/frameworks/opt/carddav" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
@@ -227,7 +228,7 @@
   <project path="frameworks/opt/mailcommon" name="platform/frameworks/opt/mailcommon" />
   <project path="frameworks/opt/mms" name="platform/frameworks/opt/mms" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" />
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" revision="master" remote="bamf" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" revision="d2-jb_42" remote="bamf" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" />
   <project path="frameworks/rs" name="platform/frameworks/rs" />
   <project path="frameworks/support" name="platform/frameworks/support" />
@@ -237,14 +238,21 @@
   <!--<project path="hardware" name="hardware" revision="master" remote="bamf" />-->
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
   <project path="hardware/invensense" name="platform/hardware/invensense" />
-  <project path="hardware/libhardware" name="platform/hardware/libhardware" />
-  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" />
-  <project path="hardware/ril" name="platform/hardware/ril" />
   <project path="hardware/samsung_slsi/exynos5" name="platform/hardware/samsung_slsi/exynos5" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" />
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" />
   <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" />
   <project path="hardware/ti/wpan" name="platform/hardware/ti/wpan" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="cm" revision="mr1-staging" />
+  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="cm" revision="mr1-staging" />
+  <project path="hardware/msm7k" name="android_hardware_msm7k" remote="cm" revision="mr1-staging" />
+  <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="cm" revision="mr1-staging" />
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="cm" revision="mr1-staging" />
+  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="cm" revision="mr1-staging" />
+  <project path="hardware/qcom/power" name="android_hardware_qcom_power" remote="cm" revision="mr1-staging" />
+  <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="cm" revision="mr1-staging" />
+  <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="cm" revision="mr1-staging" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="cm" revision="mr1-staging" />
   <project path="libcore" name="libcore" revision="jb_42" remote="bamf" />
   <project path="libnativehelper" name="platform/libnativehelper" />
   <project path="ndk" name="platform/ndk" />
@@ -280,8 +288,8 @@
   <project path="packages/apps/Contacts" name="packages_apps_contacts" revision="jb_42" remote="bamf" />
   <project path="packages/apps/DeskClock" name="packages_apps_deskclock" revision="jb_42" remote="bamf" />
   <project path="packages/apps/Launcher2" name="packages_apps_launcher2" revision="jb_42" remote="bamf" />
-  <project path="packages/apps/Phone" name="packages_apps_phone" revision="jb_42" remote="bamf" />
-  <project path="packages/apps/Settings" name="packages_apps_settings" revision="jb_42" remote="bamf" />
+  <project path="packages/apps/Phone" name="packages_apps_phone" revision="d2-jb_42" remote="bamf" />
+  <project path="packages/apps/Settings" name="packages_apps_settings" revision="d2-jb_42" remote="bamf" />
   <project path="packages/apps/SpareParts" name="packages_apps_spareparts" revision="jb_42" remote="bamf" />
   <project path="packages/apps/Superuser" name="packages_apps_superuser" revision="master" remote="bamf" />
   <project path="packages/apps/VoiceDialer" name="packages_apps_voicedialer" revision="jb_42" remote="bamf" />
@@ -296,7 +304,7 @@
   <project path="packages/providers/DrmProvider" name="platform/packages/providers/DrmProvider" />
   <project path="packages/providers/MediaProvider" name="platform/packages/providers/MediaProvider" />
   <project path="packages/providers/PartnerBookmarksProvider" name="platform/packages/providers/PartnerBookmarksProvider" />
-  <project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider" />
+  <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="cm" revision="mr1-staging" />
   <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" />
   <project path="packages/screensavers/Basic" name="platform/packages/screensavers/Basic" />
   <project path="packages/screensavers/PhotoTable" name="platform/packages/screensavers/PhotoTable" />
@@ -328,7 +336,7 @@
   <project path="prebuilts/tools" name="platform/prebuilts/tools" />
   <project path="sdk" name="platform/sdk" />
   <project path="system/bluetooth" name="platform/system/bluetooth" />
-  <project path="system/core" name="system_core" revision="jb_42" remote="bamf" />
+  <project path="system/core" name="android_system_core" remote="joel" revision="mr1-staging" />
   <project path="system/extras" name="system_extras" revision="jb_42" remote="bamf" />
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="platform/system/netd" />
