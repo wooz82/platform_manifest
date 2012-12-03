@@ -23,7 +23,7 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" />
-  <project path="bionic" name="android_bionic" remote="cm" revision="mr1-staging" />
+  <project path="bionic" name="platform/bionic" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="platform/bootable/recovery" />
@@ -70,7 +70,7 @@
   <project path="external/bsdiff" name="platform/external/bsdiff" />
   <project path="external/bzip2" name="platform/external/bzip2" />
   <project path="external/checkpolicy" name="platform/external/checkpolicy" />
-  <project path="external/chromium" name="android_external_chromium" remote="cm" revision="mr1-staging" />
+  <project path="external/chromium" name="platform/external/chromium" />
   <project path="external/chromium-trace" name="platform/external/chromium-trace" />
   <project path="external/cibu-fonts" name="platform/external/cibu-fonts" />
   <project path="external/clang" name="platform/external/clang" />
@@ -180,7 +180,7 @@
   <project path="external/replicaisland" name="platform/external/replicaisland" />
   <project path="external/safe-iop" name="platform/external/safe-iop" />
   <project path="external/sepolicy" name="platform/external/sepolicy" />
-  <project path="external/skia" name="android_external_skia" remote="cm" revision="mr1-staging" />
+  <project path="external/skia" name="platform/external/skia" />
   <project path="external/smali" name="platform/external/smali" />
   <project path="external/sonivox" name="platform/external/sonivox" />
   <project path="external/speex" name="platform/external/speex" />
@@ -199,7 +199,7 @@
   <project path="external/tremolo" name="platform/external/tremolo" />
   <project path="external/v8" name="platform/external/v8" />
   <project path="external/valgrind" name="platform/external/valgrind" />
-  <project path="external/webkit" name="android_external_webkit" remote="cm" revision="mr1-staging" />
+  <project path="external/webkit" name="platform/external/webkit" />
   <project path="external/webp" name="platform/external/webp" />
   <project path="external/webrtc" name="platform/external/webrtc" />
   <project path="external/wpa_supplicant_6" name="platform/external/wpa_supplicant_6" />
@@ -209,7 +209,7 @@
   <project path="external/yaffs2" name="platform/external/yaffs2" />
   <project path="external/zlib" name="platform/external/zlib" />
   <project path="external/zxing" name="platform/external/zxing" />
-  <project path="frameworks/av" name="android_frameworks_av" remote="cm" revision="mr1-staging" />
+  <project path="frameworks/av" name="platform/frameworks/av" />
   <project path="frameworks/base" name="frameworks_base" revision="d2-jb_42" remote="bamf" />
   <project path="frameworks/base/packages" name="frameworks_base_packages" revision="d2-jb_42" remote="bamf" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" />
@@ -220,7 +220,7 @@
   <project path="frameworks/ex" name="frameworks_ex" revision="jb_42" remote="bamf" />
   <project path="frameworks/mff" name="platform/frameworks/mff" />
   <project path="frameworks/ml" name="platform/frameworks/ml" />
-  <project path="frameworks/native" name="android_frameworks_native" remote="cm" revision="mr1-staging" />
+  <project path="frameworks/native" name="frameworks_native" revision="master" remote="bamf" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" />
   <project path="frameworks/opt/carddav" name="platform/frameworks/opt/carddav" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
@@ -304,7 +304,7 @@
   <project path="packages/providers/DrmProvider" name="platform/packages/providers/DrmProvider" />
   <project path="packages/providers/MediaProvider" name="platform/packages/providers/MediaProvider" />
   <project path="packages/providers/PartnerBookmarksProvider" name="platform/packages/providers/PartnerBookmarksProvider" />
-  <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="cm" revision="mr1-staging" />
+  <project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider" />
   <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" />
   <project path="packages/screensavers/Basic" name="platform/packages/screensavers/Basic" />
   <project path="packages/screensavers/PhotoTable" name="platform/packages/screensavers/PhotoTable" />
