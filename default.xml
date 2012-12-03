@@ -10,6 +10,11 @@
   <default revision="refs/tags/android-4.2.1_r1"
            remote="aosp"
            sync-j="4" />
+  <remote name="cm"
+         fetch="git://github.com/CyanogenMod/"
+        review="review.cyanogenmod.com" />
+  <remote name="joel"
+         fetch="git://github.com/Joelz9614/" />
 
   <project path="bamf_gapps" name="gapps" revision="jb" remote="bamf" >
     <copyfile src="buildgapps" dest="buildgapps" />
@@ -40,6 +45,11 @@
   <project path="device/samsung" name="device_samsung" revision="jb_42" remote="bamf" />
   <project path="device/sample" name="device_sample" revision="master" remote="bamf" />    
   <project path="device/ti/panda" name="device/ti/panda" groups="device" />
+  <project path="device/samsung/d2-common" name="android_device_samsung_d2-common" remote="joel" revision="jb_42" />
+  <project path="device/samsung/d2vzw" name="android_device_samsung_d2vzw" remote="joel" revision="jb_42" />
+  <project path="vendor/samsung/d2vzw" name="android_vendor_samsung_d2vzw" remote="joel" revision="jb_42" />
+  <project path="device/samsung/msm8960-common" name="android_device_samsung_msm8960-common" remote="joel" revision="jb_42" />
+  <project path="device/samsung/qcom-common" name="android_device_samsung_qcom-common" remote="joel" revision="jb_42" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
   <project path="external/aac" name="platform/external/aac" />
   <project path="external/android-clat" name="platform/external/android-clat" />
