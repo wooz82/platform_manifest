@@ -209,7 +209,7 @@
   <project path="external/yaffs2" name="platform/external/yaffs2" />
   <project path="external/zlib" name="platform/external/zlib" />
   <project path="external/zxing" name="platform/external/zxing" />
-  <project path="frameworks/base" name="frameworks_av" revision="d2-jb_42" remote="bamf" />
+  <project path="frameworks/av" name="frameworks_av" revision="d2-jb_42" remote="bamf" />
   <project path="frameworks/base" name="frameworks_base" revision="d2-jb_42" remote="bamf" />
   <project path="frameworks/base/packages" name="frameworks_base_packages" revision="d2-jb_42" remote="bamf" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" />
