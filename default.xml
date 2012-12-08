@@ -323,7 +323,7 @@
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/security" name="platform/system/security" />
-  <project path="system/vold" name="platform/system/vold" />
+  <project path="system/vold" name="system_vold" revision="jb_42" remote="bamf" />
   <project path="tools/build" name="platform/tools/build" groups="toolsbuild" />
   <project path="tools/motodev" name="platform/tools/motodev" />
   <project path="vendor" name="vendor" revision="jb_42" remote="bamf" />
