@@ -16,7 +16,7 @@
   <remote name="joel"
          fetch="git://github.com/Joelz9614/" />
 
-  <project path="bamf_gapps" name="gapps" revision="jb_42" remote="bamf" >
+  <project path="bamf_gapps" name="gapps" revision="d2-jb_42" remote="bamf" >
     <copyfile src="buildgapps" dest="buildgapps" />
   </project>
   <project path="build" name="build" revision="jb_42" remote="bamf" >
