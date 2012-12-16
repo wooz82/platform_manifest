@@ -47,7 +47,7 @@
   <project path="device/ti/panda" name="device/ti/panda" groups="device" />
   <project path="device/samsung/d2-common" name="android_device_samsung_d2-common" remote="joel" revision="jb_42" />
   <project path="device/samsung/d2vzw" name="android_device_samsung_d2vzw" remote="joel" revision="jb_42" />
-  <project path="kernel/samsung/d2" name="android_kernel_samsung_d2" remote="cm" revision="cm-10.1" />
+  <project path="kernel/samsung/d2" name="android_kernel_samsung_d2" remote="cm" revision="mr1-staging" />
   <project path="vendor/samsung/d2vzw" name="android_vendor_samsung_d2vzw" remote="joel" revision="jb_42" />
   <project path="device/samsung/msm8960-common" name="android_device_samsung_msm8960-common" remote="joel" revision="jb_42" />
   <project path="device/samsung/qcom-common" name="android_device_samsung_qcom-common" remote="joel" revision="jb_42" />
@@ -243,16 +243,16 @@
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" />
   <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" />
   <project path="hardware/ti/wpan" name="platform/hardware/ti/wpan" />
-  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="cm" revision="cm-10.1" />
-  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="cm" revision="cm-10.1" />
-  <project path="hardware/msm7k" name="android_hardware_msm7k" remote="cm" revision="cm-10.1" />
-  <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="cm" revision="cm-10.1" />
-  <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="cm" revision="cm-10.1" />
-  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="cm" revision="cm-10.1" />
-  <project path="hardware/qcom/power" name="android_hardware_qcom_power" remote="cm" revision="cm-10.1" />
-  <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="cm" revision="cm-10.1" />
-  <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="cm" revision="cm-10.1" />
-  <project path="hardware/ril" name="android_hardware_ril" remote="cm" revision="cm-10.1" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="cm" revision="mr1-staging" />
+  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="cm" revision="mr1-staging" />
+  <project path="hardware/msm7k" name="android_hardware_msm7k" remote="cm" revision="mr1-staging" />
+  <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="cm" revision="mr1-staging" />
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="cm" revision="mr1-staging" />
+  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="cm" revision="mr1-staging" />
+  <project path="hardware/qcom/power" name="android_hardware_qcom_power" remote="cm" revision="mr1-staging" />
+  <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="cm" revision="mr1-staging" />
+  <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="cm" revision="mr1-staging" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="cm" revision="mr1-staging" />
   <project path="libcore" name="libcore" revision="jb_42" remote="bamf" />
   <project path="libnativehelper" name="platform/libnativehelper" />
   <project path="ndk" name="platform/ndk" />
