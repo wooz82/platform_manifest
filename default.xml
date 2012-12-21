@@ -184,7 +184,7 @@
   <project path="external/replicaisland" name="platform/external/replicaisland" />
   <project path="external/safe-iop" name="platform/external/safe-iop" />
   <project path="external/sepolicy" name="platform/external/sepolicy" />
-  <project path="external/skia" name="android_external_skia" revision="d2-jb_42" remote="bamf" />
+  <project path="external/skia" name="android_external_skia" revision="cm-10.1" remote="cm" />
   <project path="external/smali" name="platform/external/smali" />
   <project path="external/sonivox" name="platform/external/sonivox" />
   <project path="external/speex" name="platform/external/speex" />
