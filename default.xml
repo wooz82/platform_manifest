@@ -49,7 +49,7 @@
   <project path="device/samsung/d2vzw" name="android_device_samsung_d2vzw" remote="joel" revision="jb_42" />
   <project path="device/samsung/d2spr" name="android_device_samsung_d2spr" remote="joel" revision="jb_42" />
   <project path="device/samsung/d2tmo" name="android_device_samsung_d2tmo" remote="joel" revision="jb_42" />
-  <project path="kernel/samsung/d2" name="android_kernel_samsung_d2" remote="cm" revision="cm-10.1" />
+  <project path="kernel/samsung/d2" name="android_kernel_samsung_d2" remote="cm" revision="cm-10.1-test" />
   <project path="vendor/samsung/d2vzw" name="android_vendor_samsung_d2vzw" remote="joel" revision="jb_42" />
   <project path="vendor/samsung/d2spr" name="android_vendor_samsung_d2spr" remote="joel" revision="jb_42" />
   <project path="vendor/samsung/d2tmo" name="android_vendor_samsung_d2tmo" remote="joel" revision="jb_42" />
