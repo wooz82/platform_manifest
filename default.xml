@@ -19,7 +19,7 @@
   <project path="bamf_gapps" name="gapps" revision="d2-jb_42" remote="bamf" >
     <copyfile src="buildgapps" dest="buildgapps" />
   </project>
-  <project path="build" name="build" revision="jb_42" remote="bamf" >
+  <project path="build" name="build" revision="d2-jb_42" remote="bamf" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" />
