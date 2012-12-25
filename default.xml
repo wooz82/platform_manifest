@@ -53,6 +53,7 @@
   <project path="vendor/samsung/d2vzw" name="android_vendor_samsung_d2vzw" remote="joel" revision="jb_42" />
   <project path="vendor/samsung/d2spr" name="android_vendor_samsung_d2spr" remote="joel" revision="jb_42" />
   <project path="vendor/samsung/d2tmo" name="android_vendor_samsung_d2tmo" remote="joel" revision="jb_42" />
+  <project path="vendor/samsung/d2-common" name="android_vendor_samsung_d2-common" remote="joel" revision="jb_42" />
   <project path="device/samsung/msm8960-common" name="android_device_samsung_msm8960-common" remote="joel" revision="jb_42" />
   <project path="device/samsung/qcom-common" name="android_device_samsung_qcom-common" remote="joel" revision="jb_42" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
