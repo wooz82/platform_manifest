@@ -36,7 +36,7 @@
   <project path="device/generic/x86" name="device/generic/x86" />
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
-  <project path="device/lge/mako" name="device_lge" revision="jb_42" remote="master" />  
+  <project path="device/lge" name="device_lge" revision="master" remote="bamf" />  
   <project path="device/moto" name="device_moto" revision="master" remote="bamf" />  
   <project path="device/samsung" name="device_samsung" revision="jb_42" remote="bamf" />
   <project path="device/sample" name="device_sample" revision="master" remote="bamf" />    
