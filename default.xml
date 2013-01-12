@@ -13,8 +13,8 @@
   <remote name="cm"
          fetch="git://github.com/CyanogenMod/"
         review="review.cyanogenmod.com" />
-  <remote name="joel"
-         fetch="git://github.com/Joelz9614/" />
+  <remote name="github"
+         fetch="ssh://git@github.com/TeamBAMF/" />
 
   <project path="bamf_gapps" name="gapps" revision="d2-jb_42" remote="bamf" >
     <copyfile src="buildgapps" dest="buildgapps" />
@@ -42,20 +42,9 @@
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/moto" name="device_moto" revision="master" remote="bamf" />  
-  <project path="device/samsung" name="device_samsung" revision="jb_42" remote="bamf" />
+  <project path="device/samsung" name="device_samsung" revision="d2-jb_42" remote="bamf" />
   <project path="device/sample" name="device_sample" revision="master" remote="bamf" />    
-  <project path="device/ti/panda" name="device/ti/panda" groups="device" />
-  <project path="device/samsung/d2-common" name="android_device_samsung_d2-common" remote="joel" revision="jb_42" />
-  <project path="device/samsung/d2vzw" name="android_device_samsung_d2vzw" remote="joel" revision="jb_42" />
-  <project path="device/samsung/d2spr" name="android_device_samsung_d2spr" remote="joel" revision="jb_42" />
-  <project path="device/samsung/d2tmo" name="android_device_samsung_d2tmo" remote="joel" revision="jb_42" />
-  <project path="kernel/samsung/d2" name="android_kernel_samsung_d2" remote="cm" revision="cm-10.1" />
-  <project path="vendor/samsung/d2vzw" name="android_vendor_samsung_d2vzw" remote="joel" revision="jb_42" />
-  <project path="vendor/samsung/d2spr" name="android_vendor_samsung_d2spr" remote="joel" revision="jb_42" />
-  <project path="vendor/samsung/d2tmo" name="android_vendor_samsung_d2tmo" remote="joel" revision="jb_42" />
-  <project path="vendor/samsung/d2-common" name="android_vendor_samsung_d2-common" remote="joel" revision="jb_42" />
-  <project path="device/samsung/msm8960-common" name="android_device_samsung_msm8960-common" remote="joel" revision="jb_42" />
-  <project path="device/samsung/qcom-common" name="android_device_samsung_qcom-common" remote="joel" revision="jb_42" />
+  <project path="device/ti/panda" name="device/ti/panda" groups="device" />    
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
   <project path="external/aac" name="platform/external/aac" />
   <project path="external/android-clat" name="platform/external/android-clat" />
@@ -265,6 +254,7 @@
   <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="cm" revision="cm-10.1" />
   <project path="hardware/qcom/msm8960" name="android_hardware_qcom_msm8960" remote="cm" revision="cm-10.1" />
   <project path="hardware/ril" name="android_hardware_ril" remote="cm" revision="cm-10.1" />
+  <project path="kernel/samsung/d2" name="android_kernel_samsung_d2" remote="github" revision="cm-10.1" />    
   <project path="libcore" name="libcore" revision="jb_42" remote="bamf" />
   <project path="libnativehelper" name="platform/libnativehelper" />
   <project path="ndk" name="platform/ndk" />
@@ -348,7 +338,7 @@
   <project path="prebuilts/tools" name="platform/prebuilts/tools" />
   <project path="sdk" name="platform/sdk" />
   <project path="system/bluetooth" name="platform/system/bluetooth" />
-  <project path="system/core" name="android_system_core" remote="joel" revision="mr1-staging" />
+  <project path="system/core" name="system_core" remote="bamf" revision="d2-jb_42" />
   <project path="system/extras" name="system_extras" revision="jb_42" remote="bamf" />
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="platform/system/netd" />
@@ -356,5 +346,5 @@
   <project path="system/vold" name="system_vold" revision="d2-jb_42" remote="bamf" />
   <project path="tools/build" name="platform/tools/build" groups="toolsbuild" />
   <project path="tools/motodev" name="platform/tools/motodev" />
-  <project path="vendor" name="vendor" revision="jb_42" remote="bamf" />
+  <project path="vendor" name="vendor" revision="d2-jb_42" remote="bamf" />
 </manifest>
