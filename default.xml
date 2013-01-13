@@ -27,8 +27,8 @@
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="platform/bootable/recovery" />
-  <project path="cts" name="platform/cts" />
-  <project path="dalvik" name="platform/dalvik" />
+  <project path="cts" name="platform/cts" />>
+  <project path="dalvik" name="dalvik" revision="d2-jb_42" remote="bamf" >
   <project path="development" name="platform/development" />
   <project path="device/asus" name="device_asus" revision="jb_42" remote="bamf" />
   <project path="device/asus/tilapia" name="device/asus/tilapia" groups="device" />
