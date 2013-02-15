@@ -43,7 +43,6 @@
   <project path="device/moto" name="device_moto" revision="master" remote="bamf" />  
   <project path="device/samsung" name="device_samsung" revision="d2-jb_42" remote="bamf" />
   <project path="device/sample" name="device_sample" revision="master" remote="bamf" />    
-  <project path="device/ti/panda" name="device/ti/panda" groups="device" />    
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" />
