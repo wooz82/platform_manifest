@@ -31,7 +31,6 @@
   <project path="dalvik" name="dalvik" revision="d2-jb_42" remote="bamf" />
   <project path="development" name="platform/development" />
   <project path="device/asus" name="device_asus" revision="jb_42" remote="bamf" />
-  <project path="device/asus/tilapia" name="device/asus/tilapia" groups="device" />
   <project path="device/common" name="device_common" revision="d2-jb_42" remote="bamf" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
   <project path="device/generic/armv7-a" name="device/generic/armv7-a" groups="pdk" />
