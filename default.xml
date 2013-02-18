@@ -248,7 +248,6 @@
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" revision="refs/tags/android-4.2.1_r1.2"/>
   <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" revision="refs/tags/android-4.2.1_r1.2"/>
   <project path="hardware/ti/wpan" name="platform/hardware/ti/wpan" revision="refs/tags/android-4.2.1_r1.2"/>
-  <project path="kernel/exynos/manta" name="kernel/exynos" remote="aosp" revision="android-exynos-manta-3.4-jb-mr1.1" />
   <project path="libcore" name="libcore" revision="jb_42" remote="bamf" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk-java" />
   <project path="ndk" name="platform/ndk" />
