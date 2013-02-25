@@ -230,6 +230,8 @@
   <project path="gdk" name="platform/gdk" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" remote="caf" revision="jb_2.5" />
   <project path="hardware/invensense" name="platform/hardware/invensense" remote="caf" revision="jb_2.5" />
+  <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" remote="caf" revision="jb_2.5" />
+  <project path="hardware/qcom/display" name="platform/hardware/qcom/display" remote="caf" revision="jb_2.5" />
   <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" remote="caf" revision="jb_2.5" />
   <project path="hardware" name="hardware" remote="bamf" revision="d2-jb_42" />
   <project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" remote="caf" revision="jb_2.5" />
