@@ -236,7 +236,6 @@
   <project path="hardware" name="hardware" remote="bamf" revision="d2-jb_42" />
   <project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" remote="caf" revision="jb_2.5" />
   <project path="hardware/qcom/media" name="platform/hardware/qcom/media" remote="caf" revision="jb_2.5" />
-  <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" remote="caf" revision="jb" />
   <project path="hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" remote="caf" revision="jb" />
   <project path="hardware/qcom/sensors" name="platform/hardware/qcom/sensors" remote="caf" revision="jb_2.5" />
   <project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" remote="caf" revision="jb_2.5" />
