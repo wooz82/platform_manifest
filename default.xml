@@ -251,7 +251,7 @@
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" />
   <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" />
   <project path="hardware/ti/wpan" name="platform/hardware/ti/wpan" />
-  <project path="kernel/samsung/d2" name="android_kernel_samsung_d2" remote="github" revision="d2-jb_42-2.5" />    
+  <project path="kernel/samsung/d2" name="android_kernel_samsung_d2" remote="github" revision="d2-jb_42" />    
   <project path="libcore" name="libcore" revision="d2-jb_42" remote="bamf" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk-java" />
   <project path="ndk" name="platform/ndk" />
