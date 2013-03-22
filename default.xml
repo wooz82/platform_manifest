@@ -10,7 +10,7 @@
          fetch="git://github.com/CyanogenMod/"
         review="review.cyanogenmod.com" />
   <remote name="github"
-         fetch="ssh://git@github.com/TeamBAMF/" />
+         fetch="git://github.com/TeamBAMF/" />
   
   <project path="build" name="android_build" revision="d2-jb_42" remote="github" >
     <copyfile src="core/root.mk" dest="Makefile" />
