@@ -1,2 +1,2 @@
-$ repo init -u https://bitbucket.org/TeamBAMF/platform_manifest.git
+$ repo init -u https://github.com/TeamBAMF/platform_manifest.git -b jb_42-public
 $ repo sync
