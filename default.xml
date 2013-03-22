@@ -260,7 +260,7 @@
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" />  
   <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" />
-  <project path="packages/apps/Mms" name="android_packages_apps_Mms" revision="d2-jb_42" remote="github" />
+  <project path="packages/apps/Mms" name="android_packages_apps_mms" revision="d2-jb_42" remote="github" />
   <project path="packages/apps/Music" name="platform/packages/apps/Music" />
   <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" />
   <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" />
@@ -281,7 +281,7 @@
   <project path="packages/apps/Phone" name="android_packages_apps_phone" revision="d2-jb_42" remote="github" />
   <project path="packages/apps/Settings" name="android_packages_apps_settings" revision="d2-jb_42" remote="github" />
   <project path="packages/apps/SpareParts" name="android_packages_apps_spareparts" revision="jb_42" remote="github" />
-  <project path="packages/apps/Superuser" name="android_packages_apps_superuser" revision="master" remote="github" />
+  <project path="packages/apps/Superuser" name="chainsdd_packages_apps_superuser" revision="master" remote="github" />
   <project path="packages/apps/VoiceDialer" name="android_packages_apps_voicedialer" revision="jb_42" remote="github" />
   <project path="packages/bamf" name="custom_packages_bamf" revision="master" remote="github" />  
   <project path="packages/tmobile" name="custom_packages_tmobile" revision="master" remote="github" />  
@@ -292,7 +292,7 @@
   <project path="packages/providers/ContactsProvider" name="platform/packages/providers/ContactsProvider" />
   <project path="packages/providers/DownloadProvider" name="platform/packages/providers/DownloadProvider" />
   <project path="packages/providers/DrmProvider" name="platform/packages/providers/DrmProvider" />
-  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" revision="d2-jb_42" remote="github" />
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_mediaprovider" revision="d2-jb_42" remote="github" />
   <project path="packages/providers/PartnerBookmarksProvider" name="platform/packages/providers/PartnerBookmarksProvider" />
   <project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider" />
   <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" />
