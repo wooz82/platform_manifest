@@ -278,7 +278,7 @@
   <project path="packages/apps/Phone" name="android_packages_apps_phone" revision="jb_42" remote="github" />
   <project path="packages/apps/Settings" name="android_packages_apps_settings" revision="jb_42" remote="github" />
   <project path="packages/apps/SpareParts" name="android_packages_apps_spareparts" revision="jb_42" remote="github" />
-  <project path="packages/apps/Superuser" name="android_packages_apps_superuser" revision="master" remote="github" />
+  <project path="packages/apps/Superuser" name="chainsdd_packages_apps_superuser" revision="master" remote="github" />
   <project path="packages/apps/VoiceDialer" name="android_packages_apps_voicedialer" revision="jb_42" remote="github" />
   <project path="packages/bamf" name="custom_packages_bamf" revision="master" remote="github" />  
   <project path="packages/tmobile" name="custom_packages_tmobile" revision="master" remote="github" />  
