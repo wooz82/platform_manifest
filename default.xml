@@ -3,18 +3,13 @@
 
   <remote  name="aosp"    
            fetch="https://android-review.googlesource.com/" />
-  <remote  name="bamf"      
-           fetch="ssh://git@bitbucket.org/TeamBAMF/" /> 
-  <!--<remote  name="gapps"     
-           fetch="ssh://git@bitbucket.org/adrynalyne/" />-->  
+  <remote name="github"
+         fetch="git://github.com/TeamBAMF/" />
   <default revision="refs/tags/android-4.2.2_r1"
            remote="aosp"
            sync-j="4" />
-
-  <project path="bamf_gapps" name="gapps" revision="jb_42" remote="bamf" >
-    <copyfile src="buildgapps" dest="buildgapps" />
-  </project>
-  <project path="build" name="build" revision="jb_42" remote="bamf" >
+ 
+  <project path="build" name="android_build" revision="jb_42" remote="github" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -25,7 +20,7 @@
   <project path="cts" name="platform/cts" />
   <project path="dalvik" name="platform/dalvik" />
   <project path="development" name="platform/development" />
-  <project path="device/asus" name="device_asus" revision="jb_42" remote="bamf" />
+  <project path="device/asus" name="android_device_asus" revision="jb_42" remote="github" />
   <project path="device/common" name="device/common" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
   <project path="device/generic/armv7-a" name="device/generic/armv7-a" groups="pdk" />
@@ -35,11 +30,9 @@
   <project path="device/generic/x86" name="device/generic/x86" groups="pdk" />
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
-  <project path="device/lge" name="device_lge" revision="master" remote="bamf" />  
-  <project path="device/moto" name="device_moto" revision="master" remote="bamf" />  
-  <project path="device/samsung" name="device_samsung" revision="jb_42" remote="bamf" />
-  <project path="device/sample" name="device_sample" revision="master" remote="bamf" />    
-  
+  <project path="device/lge" name="android_device_lge" revision="master" remote="github" />   
+  <project path="device/samsung" name="android_device_samsung" revision="jb_42" remote="github" />
+  <project path="device/sample" name="android_device_sample" revision="master" remote="github" />   
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" />
@@ -200,17 +193,17 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" />
   <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
-  <project path="frameworks/base" name="frameworks_base" revision="jb_42" remote="bamf" />
-  <project path="frameworks/base/packages" name="frameworks_base_packages" revision="jb_42" remote="bamf" />
+  <project path="frameworks/base" name="android_frameworks_base" revision="jb_42" remote="github" />
+  <project path="frameworks/base/packages" name="android_frameworks_base_packages" revision="jb_42" remote="github" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/linkloader" name="platform/frameworks/compile/linkloader" groups="pdk" />
   <project path="frameworks/compile/llvm-ndk-cc" name="platform/frameworks/compile/llvm-ndk-cc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" />
-  <project path="frameworks/ex" name="frameworks_ex" revision="jb_42" remote="bamf" />
+  <project path="frameworks/ex" name="android_frameworks_ex" revision="jb_42" remote="github" />
   <project path="frameworks/mff" name="platform/frameworks/mff" />
   <project path="frameworks/ml" name="platform/frameworks/ml" />
-  <project path="frameworks/native" name="frameworks_native" revision="master" remote="bamf" />
+  <project path="frameworks/native" name="android_frameworks_native" revision="master" remote="github" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" />
   <project path="frameworks/opt/carddav" name="platform/frameworks/opt/carddav" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
@@ -218,14 +211,13 @@
   <project path="frameworks/opt/mailcommon" name="platform/frameworks/opt/mailcommon" />
   <project path="frameworks/opt/mms" name="platform/frameworks/opt/mms" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" />
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" revision="master" remote="bamf" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" revision="master" remote="github" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" />
   <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" />
   <project path="frameworks/support" name="platform/frameworks/support" />
   <project path="frameworks/testing" name="platform/frameworks/testing" />
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" />
   <project path="gdk" name="platform/gdk" />
-  <!--<project path="hardware" name="hardware" revision="master" remote="bamf" />-->
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="broadcom_wlan" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
@@ -248,7 +240,7 @@
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" groups="omap4" />
   <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" />
   <project path="hardware/ti/wpan" name="platform/hardware/ti/wpan" />
-  <project path="libcore" name="libcore" revision="jb_42" remote="bamf" />
+  <project path="libcore" name="android_libcore" revision="jb_42" remote="github" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk-java" />
   <project path="ndk" name="platform/ndk" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
@@ -265,7 +257,7 @@
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" />  
   <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" />
-  <project path="packages/apps/Mms" name="packages_apps_mms" revision="jb_42" remote="bamf" />
+  <project path="packages/apps/Mms" name="android_packages_apps_mms" revision="jb_42" remote="github" />
   <project path="packages/apps/Music" name="platform/packages/apps/Music" />
   <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" />
   <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" />
@@ -279,19 +271,19 @@
   <project path="packages/apps/Stk" name="platform/packages/apps/Stk" />
   <project path="packages/apps/Tag" name="platform/packages/apps/Tag" />
   <project path="packages/apps/VideoEditor" name="platform/packages/apps/VideoEditor" />
-  <project path="packages/apps/Browser" name="packages_apps_browser" revision="jb_42" remote="bamf" />
-  <project path="packages/apps/Contacts" name="packages_apps_contacts" revision="jb_42" remote="bamf" />
-  <project path="packages/apps/DeskClock" name="packages_apps_deskclock" revision="jb_42" remote="bamf" />
-  <project path="packages/apps/Launcher2" name="packages_apps_launcher2" revision="jb_42" remote="bamf" />
-  <project path="packages/apps/Phone" name="packages_apps_phone" revision="jb_42" remote="bamf" />
-  <project path="packages/apps/Settings" name="packages_apps_settings" revision="jb_42" remote="bamf" />
-  <project path="packages/apps/SpareParts" name="packages_apps_spareparts" revision="jb_42" remote="bamf" />
-  <project path="packages/apps/Superuser" name="packages_apps_superuser" revision="master" remote="bamf" />
-  <project path="packages/apps/VoiceDialer" name="packages_apps_voicedialer" revision="jb_42" remote="bamf" />
-  <project path="packages/bamf" name="packages_bamf" revision="master" remote="bamf" />  
-  <project path="packages/tmobile" name="packages_tmobile" revision="master" remote="bamf" />  
-  <project path="packages/experimental" name="packages_experimental" revision="jb_42" remote="bamf" />
-  <project path="packages/inputmethods" name="packages_inputmethods" revision="jb_42" remote="bamf" />  
+  <project path="packages/apps/Browser" name="android_packages_apps_browser" revision="jb_42" remote="github" />
+  <project path="packages/apps/Contacts" name="android_packages_apps_contacts" revision="jb_42" remote="github" />
+  <project path="packages/apps/DeskClock" name="android_packages_apps_deskclock" revision="jb_42" remote="github" />
+  <project path="packages/apps/Launcher2" name="android_packages_apps_launcher2" revision="jb_42" remote="github" />
+  <project path="packages/apps/Phone" name="android_packages_apps_phone" revision="jb_42" remote="github" />
+  <project path="packages/apps/Settings" name="android_packages_apps_settings" revision="jb_42" remote="github" />
+  <project path="packages/apps/SpareParts" name="android_packages_apps_spareparts" revision="jb_42" remote="github" />
+  <project path="packages/apps/Superuser" name="android_packages_apps_superuser" revision="master" remote="github" />
+  <project path="packages/apps/VoiceDialer" name="android_packages_apps_voicedialer" revision="jb_42" remote="github" />
+  <project path="packages/bamf" name="custom_packages_bamf" revision="master" remote="github" />  
+  <project path="packages/tmobile" name="custom_packages_tmobile" revision="master" remote="github" />  
+  <project path="packages/experimental" name="android_packages_experimental" revision="jb_42" remote="github" />
+  <project path="packages/inputmethods" name="android_packages_inputmethods" revision="jb_42" remote="github" />  
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" />
   <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" />
   <project path="packages/providers/ContactsProvider" name="platform/packages/providers/ContactsProvider" />
@@ -304,7 +296,7 @@
   <project path="packages/screensavers/Basic" name="platform/packages/screensavers/Basic" />
   <project path="packages/screensavers/PhotoTable" name="platform/packages/screensavers/PhotoTable" />
   <project path="packages/screensavers/WebView" name="platform/packages/screensavers/WebView" />
-  <project path="packages/wallpapers" name="packages_wallpapers" revision="jb_42" remote="bamf" />  
+  <project path="packages/wallpapers" name="android_packages_wallpapers" revision="jb_42" remote="github" />  
   <project path="pdk" name="platform/pdk" groups="pdk" />
   <project path="prebuilts/clang/darwin-x86/3.1" name="platform/prebuilts/clang/darwin-x86/3.1" groups="pdk,darwin" />
   <project path="prebuilts/clang/darwin-x86/3.2" name="platform/prebuilts/clang/darwin-x86/3.2" groups="pdk,darwin" />
@@ -331,13 +323,13 @@
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk" />
   <project path="sdk" name="platform/sdk" />
   <project path="system/bluetooth" name="platform/system/bluetooth" groups="pdk" />
-  <project path="system/core" name="system_core" revision="jb_42" remote="bamf" />
-  <project path="system/extras" name="system_extras" revision="jb_42" remote="bamf" />
+  <project path="system/core" name="android_system_core" revision="jb_42" remote="github" />
+  <project path="system/extras" name="android_system_extras" revision="jb_42" remote="github" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
   <project path="system/netd" name="platform/system/netd" groups="pdk" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
-  <project path="system/vold" name="system_vold" revision="jb_42" remote="bamf" />
+  <project path="system/vold" name="android_system_vold" revision="jb_42" remote="github" />
   <project path="tools/build" name="platform/tools/build" groups="notdefault,tools" />
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
-  <project path="vendor" name="vendor" revision="jb_42" remote="bamf" />
+  <project path="vendor" name="custom_vendor" revision="jb_42" remote="github" />
 </manifest>
